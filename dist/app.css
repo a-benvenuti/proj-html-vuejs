@@ -360,17 +360,18 @@ p {
 }
 .box1 .container p {
   font-weight: 300;
+  line-height: 30px;
 }
 .box1 .box1__card {
   display: flex;
+  justify-content: space-between;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
 }
 .box1 .box1__card .card {
   position: relative;
-  width: 320px;
-  height: 280px;
+  width: 20%;
   cursor: pointer;
   border-radius: 5px;
   text-align: center;
@@ -467,4 +468,73 @@ p {
   bottom: 0px;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
+}
+
+.box2 .container {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+.box2 .container h3 {
+  font-weight: 400;
+}
+.box2 .container hr {
+  width: 300px;
+  margin: 0 auto;
+  border-color: #f9d03f;
+}
+.box2 .container p {
+  font-weight: 300;
+  line-height: 30px;
+}
+.box2 .box2__card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.box2 .box2__card .card {
+  position: relative;
+  width: 30%;
+  height: 384px;
+  cursor: pointer;
+  text-align: center;
+}
+.box2 .box2__card .card img {
+  width: 100%;
+  height: auto;
+}
+.box2 .box2__card .card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f9d03f;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box2 .box2__card .card .overlay i {
+  font-size: 30px;
+  color: #f9d03f;
+  border-radius: 50%;
+  background-color: white;
+}
+.box2 .box2__card .card .overlay h5 {
+  color: white;
+  font-weight: 400;
+}
+.box2 .box2__card .card .overlay h6 {
+  color: white;
+  font-weight: 600;
+}
+.box2 .box2__card .card .overlay a {
+  background-color: #ffe382;
+}
+.box2 .box2__card .card:hover .overlay {
+  opacity: 1;
 }
