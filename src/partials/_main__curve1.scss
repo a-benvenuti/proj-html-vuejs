@@ -1,0 +1,47 @@
+.curve1{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  &__line-top{
+    height: 150px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius:  50%;
+  }
+  &__img{
+    height: 100%;
+    width: 100%;
+    background: url("../img/bg-dati.jpg") no-repeat;
+    background-size: cover;
+    @include my-display-flex;
+    justify-content: center;
+    align-items: center;
+    .wrapper-data{
+      width: 100%;
+      max-width: $container-small;
+      margin: 0 auto;
+      height: 50%;
+      @include my-display-flex;
+      justify-content: space-between;
+      align-items: center;
+      .data{
+        text-align: center;
+        i{font-size: 60px; color: $color-primary;}
+        h2{color: $color-primary; font-weight: 500;}
+        h4{color: $color-white; font-weight: 500;}
+      }
+    }
+  }
+  &__line-bottom{
+    height: 150px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    border-top-right-radius: 50%;
+    border-top-left-radius:  50%;
+  }
+}

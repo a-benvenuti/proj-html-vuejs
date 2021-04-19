@@ -411,3 +411,60 @@ p {
 .box1 .box1__card .card:hover .overlay {
   opacity: 1;
 }
+
+.curve1 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.curve1__line-top {
+  height: 150px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.curve1__img {
+  height: 100%;
+  width: 100%;
+  background: url("../img/bg-dati.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.curve1__img .wrapper-data {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.curve1__img .wrapper-data .data {
+  text-align: center;
+}
+.curve1__img .wrapper-data .data i {
+  font-size: 60px;
+  color: #f9d03f;
+}
+.curve1__img .wrapper-data .data h2 {
+  color: #f9d03f;
+  font-weight: 500;
+}
+.curve1__img .wrapper-data .data h4 {
+  color: white;
+  font-weight: 500;
+}
+.curve1__line-bottom {
+  height: 150px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+}
