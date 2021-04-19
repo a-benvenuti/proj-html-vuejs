@@ -306,7 +306,7 @@ p {
 
 .hero {
   display: flex;
-  height: calc(100vh - 160px);
+  height: calc(100vh - 120px);
   width: 100%;
   align-items: center;
   background: url("../img/bg-bulding.jpg") no-repeat;
@@ -322,7 +322,24 @@ p {
   color: white;
   font-weight: 600;
 }
-.hero__content h4 {
+.hero__content h3 {
   color: #f9d03f;
   font-weight: 400;
+}
+
+.help {
+  height: 120px;
+  width: 100%;
+  text-align: center;
+  background-color: #f9d03f;
+  position: relative;
+}
+.help h2 {
+  color: #666665;
+  font-weight: 400;
+}
+.help .border {
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 98px);
 }

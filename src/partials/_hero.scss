@@ -1,6 +1,6 @@
 .hero{
   @include my-display-flex;
-  height: calc(100vh - 160px);
+  height: calc(100vh - 120px);
   width: 100%;
   align-items: center;
   background: url("../img/bg-bulding.jpg") no-repeat;
@@ -11,6 +11,16 @@
     margin: 0 auto;
     text-align: center;
     h1{color: $color-white; font-weight: 600;}
-    h4{color: $color-primary; font-weight: 400;}
+    h3{color: $color-primary; font-weight: 400;}
   }
+}
+
+.help{
+  height: 120px;
+  width: 100%;
+  text-align: center;
+  background-color: $color-primary;
+  position: relative;
+  h2{color: $color-secondary700; font-weight: 400;}
+  .border{position: absolute; bottom: -20px; left: calc(50% - 98px);}
 }
