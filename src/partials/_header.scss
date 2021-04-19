@@ -1,0 +1,14 @@
+.header{
+  height: 160px;
+  @include my-display-flex;
+  justify-content: space-between;
+  &__logo img{width: 280px; cursor: pointer;}
+  &__navbar{@include my-display-flex; align-items: center; position: relative;}
+}
+.fa-caret-down{
+  font-size: 30px;
+  color: $color-white;
+  position: absolute;
+  bottom: -48px;
+  left: 20px;
+}

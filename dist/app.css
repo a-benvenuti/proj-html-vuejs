@@ -239,3 +239,62 @@ p {
 .p-50 {
   padding: 50px;
 }
+
+.btn {
+  padding: 10px 20px;
+  display: inline-block;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.primary {
+  color: #666665;
+  background-color: #f9d03f;
+}
+.primary:hover {
+  background-color: #666665;
+  color: white;
+}
+
+.secondary {
+  color: white;
+  background-color: #666665;
+}
+.secondary:hover {
+  background-color: #f9d03f;
+  color: #666665;
+}
+
+.border {
+  border: 2px solid white;
+  color: white;
+  background-color: #666665;
+}
+.border:hover {
+  border: 2px solid #666665;
+  background-color: white;
+  color: #6b6868;
+}
+
+.header {
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo img {
+  width: 280px;
+  cursor: pointer;
+}
+.header__navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.fa-caret-down {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  bottom: -48px;
+  left: 20px;
+}

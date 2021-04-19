@@ -1,1 +1,22 @@
-
+.btn{
+  padding: 10px 20px;
+  display: inline-block;
+  font-weight: 400;
+  cursor: pointer;
+}
+.primary{
+  color: $color-secondary700;
+  background-color: $color-primary;
+  &:hover{background-color: $color-secondary700; color: $color-white;}
+}
+.secondary{
+  color: $color-white;
+  background-color: $color-secondary700;
+  &:hover{background-color: $color-primary; color: $color-secondary700;}
+}
+.border{
+  border: 2px solid $color-white;
+  color: $color-white;
+  background-color: $color-secondary700;
+  &:hover{border: 2px solid $color-secondary700; background-color: $color-white; color: $color-secondary500;}
+}
