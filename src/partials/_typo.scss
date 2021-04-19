@@ -1,8 +1,9 @@
 a{text-decoration: none;}
-li{list-style-type: none;}
+li{list-style-type: none; cursor: pointer;}
 h1, h2, h3, h4, h5, h6{color: $color-secondary700;}
 p{color: $color-secondary;}
 .small-text{font-size: $font-small;}
 .normal-text{font-size: $font-normal;}
 .med-text{font-size: $font-med;}
 .big-text{font-size: $font-big;}
+.xbig-text{font-size: $font-xbig;}

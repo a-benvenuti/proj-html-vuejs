@@ -1,1 +1,16 @@
-
+.hero{
+  @include my-display-flex;
+  height: calc(100vh - 160px);
+  width: 100%;
+  align-items: center;
+  background: url("../img/bg-bulding.jpg") no-repeat;
+  background-size: cover;
+  &__content{
+    width: 100%;
+    max-width: $container-xsmall;
+    margin: 0 auto;
+    text-align: center;
+    h1{color: $color-white; font-weight: 600;}
+    h4{color: $color-primary; font-weight: 400;}
+  }
+}

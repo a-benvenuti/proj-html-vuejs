@@ -14,6 +14,7 @@ a {
 
 li {
   list-style-type: none;
+  cursor: pointer;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,6 +39,10 @@ p {
 
 .big-text {
   font-size: 35px;
+}
+
+.xbig-text {
+  font-size: 50px;
 }
 
 .mt-10 {
@@ -297,4 +302,27 @@ p {
   position: absolute;
   bottom: -48px;
   left: 20px;
+}
+
+.hero {
+  display: flex;
+  height: calc(100vh - 160px);
+  width: 100%;
+  align-items: center;
+  background: url("../img/bg-bulding.jpg") no-repeat;
+  background-size: cover;
+}
+.hero__content {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.hero__content h1 {
+  color: white;
+  font-weight: 600;
+}
+.hero__content h4 {
+  color: #f9d03f;
+  font-weight: 400;
 }
