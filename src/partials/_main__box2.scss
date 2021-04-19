@@ -1,4 +1,5 @@
 .box2{
+  height: 100vh;
   .container{
     width: 100%;
     max-width: $container-xsmall;
@@ -40,4 +41,5 @@
       &:hover .overlay{opacity: 1;}
     }
   }
+  h4{text-align: center; font-weight: 400;}
 }

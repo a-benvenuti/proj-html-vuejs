@@ -1,0 +1,35 @@
+.box3{
+  height: 100vh;
+  background-color: $color-secondary200;
+  .container{
+    width: 100%;
+    max-width: $container-xsmall;
+    text-align: center;
+    margin: 0 auto;
+    h3{font-weight: 400;}
+    hr{width: 300px; margin: 0 auto; border-color: $color-primary;}
+    p{font-weight: 300; line-height: 30px;}
+  }
+  .box3__card{
+    @include my-display-flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: $container-basic;
+    margin: 0 auto;
+    .card{
+      position: relative;
+      width: 25%;
+      cursor: pointer;
+      text-align: center;
+      i{font-size: 30px; color: $color-white; border-radius: 50%;}
+      i:hover{background-color: $color-primary500;}
+      .fa-home{background-color: $color-lightblue;}
+      .fa-cog{background-color: $color-lightpurple;}
+      .fa-users{padding: 30px 28px; background-color: $color-coral;}
+      .fa-lightbulb{padding: 30px 35px; background-color: $color-lightgreen;}
+      h3{font-weight: 400;}
+      hr{width: 30px; margin: 0 auto; border-color: $color-secondary700;}
+      p{line-height: 30px;}
+    }
+  }
+}
