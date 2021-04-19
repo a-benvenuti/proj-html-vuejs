@@ -343,3 +343,71 @@ p {
   bottom: -20px;
   left: calc(50% - 98px);
 }
+
+.box1 .container {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+.box1 .container h3 {
+  font-weight: 400;
+}
+.box1 .container hr {
+  width: 300px;
+  margin: 0 auto;
+  border-color: #f9d03f;
+}
+.box1 .container p {
+  font-weight: 300;
+}
+.box1 .box1__card {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.box1 .box1__card .card {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.box1 .box1__card .card i {
+  font-size: 30px;
+  color: #6b6868;
+  border: 1px solid #666665;
+  border-radius: 50%;
+}
+.box1 .box1__card .card .fa-building {
+  padding-left: 34px;
+  padding-right: 34px;
+}
+.box1 .box1__card .card h3 {
+  font-weight: 400;
+}
+.box1 .box1__card .card p {
+  line-height: 30px;
+}
+.box1 .box1__card .card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 20px;
+  background-color: #f9d03f;
+  border-radius: 5px;
+  opacity: 0;
+}
+.box1 .box1__card .card .overlay p {
+  color: #6b6868;
+}
+.box1 .box1__card .card .overlay a {
+  background-color: #ffe382;
+}
+.box1 .box1__card .card:hover .overlay {
+  opacity: 1;
+}
