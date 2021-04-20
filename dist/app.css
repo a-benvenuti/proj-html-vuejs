@@ -643,6 +643,41 @@ p {
   line-height: 30px;
 }
 
+.partners__main {
+  height: 420px;
+  width: 100%;
+  align-items: center;
+}
+.partners__main .container {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+.partners__main .container h3 {
+  font-weight: 400;
+}
+.partners__main .container hr {
+  width: 300px;
+  margin: 0 auto;
+  border-color: #f9d03f;
+}
+.partners__main .container p {
+  font-weight: 300;
+  line-height: 30px;
+}
+.partners__main .wrapper {
+  width: 920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.partners__main .wrapper img {
+  width: 16%;
+  height: auto;
+}
+
 .hero__main {
   display: flex;
   height: 500px;
