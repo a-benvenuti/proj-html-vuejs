@@ -26,21 +26,18 @@
       <!-- header -->
       <header class="header p-30">
         <div class="header__logo">
-          <img src="img/logo.png" alt="logo">
+          <img :src="'img/' + nav_logo +'.png'" alt="logo">
         </div>
-        <ul class="header__navbar">
-          <li class="mdx-30">HOME</li>
-          <li class="mdx-30">ABOUT</li>
-          <li class="mdx-30">SERVICES</li>
-          <li class="mdx-30">WORK</li>
-          <li class="mdx-30">ARTICLES</li>
-          <li class="btn primary">GET QUOTE</li>
+        <ul class="header__navbar" v-if="navbar.length > 0">
+          <li v-for="(elem) in navbar" class="mdx-30"> <a :href="'#anchor' + elem.numAncor">{{elem.label}}</a> </li>
+          <li v-for="(elem) in nav_btn" class="btn primary">{{elem.label}}</li>
           <li><i class="fas fa-caret-down"></i></li>
         </ul>
       </header>
       <!-- /header -->
 
       <!-- hero -->
+      <a name="anchor_1"></a>
       <div class="hero">
         <div class="hero__content">
           <h1 class="xbig-text">BUILDING INSPIRING SPACES</h1>
@@ -57,6 +54,7 @@
 
       <!-- main -->
       <main>
+        <a name="anchor_2"></a>
         <div class="box1 mt-50">
           <div class="container mt-50">
             <h3 class="med-text pt-50 pb-30">Specialist in Modern Construction</h3>
@@ -134,6 +132,7 @@
           </div>
           <div class="curve1__line-bottom"></div>
         </div>
+        <a name="anchor_4"></a>
         <div class="box2 mt-50">
           <div class="container mt-50">
             <h3 class="med-text pt-50 pb-30">Explore Recent Work</h3>
@@ -316,8 +315,11 @@
         </div>
       </footer>
       <!-- /footer -->
-
     </div>
 
+
+    <!-- script -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- /script -->
   </body>
 </html>
