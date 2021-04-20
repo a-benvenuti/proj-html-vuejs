@@ -26,7 +26,7 @@
       <!-- header -->
       <header class="header p-30">
         <div class="header__logo">
-          <img :src="'img/' + nav_logo +'.png'" alt="logo">
+          <img :src="logo_nav" alt="logo">
         </div>
         <ul class="header__navbar" v-if="navbar.length > 0">
           <li v-for="(elem) in navbar" class="mdx-30"> <a :href="'#anchor' + elem.numAncor">{{elem.label}}</a> </li>
@@ -216,101 +216,71 @@
       <footer class="footer">
         <div class="footer__contact">
           <div class="wrapper pt-50">
-            <ul class="footer__list">
-              <li class="li1">
-                <img src="img/logo-footer.png" alt="logofooter">
-                <ul class="li__content1">
+            <ul class="footer__list" v-if="footer.length > 0">
+              <li :class="'li' + footer[0].order">
+                <img :src="logo_footer" alt="logofooter">
+                <ul :class="'li__content' + footer[0].order">
                   <li class="mt-30"> <span class="small-text">We are specialist in the construction of unique and exclusive properties. Our work inspires. We pride ourselves on delivering outstandig quality and design for leading clients across the world.</span> </li>
                   <li class="btn primary mt-30">LEARN MORE</li>
                 </ul>
               </li>
-              <li class="li2">
-                <h5 class="mb-50">LATEST TWEETS</h5>
-                <ul class="li__content2">
-                  <li class="tweet">
+
+              <li :class="'li' + footer[1].order">
+                <h5 class="mb-50">{{footer[1].title}}</h5>
+                <ul :class="'li__content' + footer[1].order">
+                  <li class="tweet" v-for="(tweetter) in tweet">
                     <ul class="tweet__user">
                       <li class="user__name">
-                        <img src="img/social-icon.png" alt="user-img" class="mdx-10">
+                        <img :src="'img/' + tweetter.icon + '.png'" alt="user-img" class="mdx-10">
                         <div>
-                          <h5>ThemeFusion</h5>
-                          <h6>@Theme_Fusion</h6>
+                          <h5>{{tweetter.name}}</h5>
+                          <h6>{{tweetter.account}}</h6>
                         </div>
                       </li>
-                      <li> <i class="fab fa-twitter"></i> </li>
+                      <li> <i :class="tweetter.socialIcon"></i> </li>
                     </ul>
                     <ul class="tweetter psx-50">
-                      <li class="small-text">Do you need sublime WordPress hosting for your next website? Take advantage of exlusive partners offers that we have secured just for you, & laucnh your site in seconds with <span>#avada</span> on WP Engine hosting & get 30% Off this Black Friday <span>bit.ly/3kjLLE2 #BlackFriday2020</span> </li>
-                      <li class="mt-20 mb-10"> <img src="img/social-post.jpeg" alt="post"> </li>
+                      <li class="small-text">{{tweetter.postText}}</li>
+                      <li class="mt-20 mb-10"> <img :src="'img/' + tweetter.postImg + '.jpeg'" alt="post"> </li>
                     </ul>
                     <ul class="share psx-50">
                       <li>
                         <div>
-                          <i class="far fa-heart mdx-20"></i>
-                          <i class="far fa-share-square"></i>
+                          <i :class="tweetter.like + ' ' + 'mdx-20'"></i>
+                          <i :class="tweetter.retweet"></i>
                         </div>
                       </li>
-                      <li> 22h</li>
+                      <li>{{tweetter.ora}}</li>
                     </ul>
                   </li>
                 </ul>
               </li>
-              <li class="li3">
-                <h5 class="mb-50">CONTACT US TODAY</h5>
-                <ul class="li__content3">
-                  <li class="block__data">
+
+              <li :class="'li' + footer[2].order">
+                <h5 class="mb-50">{{footer[2].title}}</h5>
+                <ul :class="'li__content' + footer[2].order">
+                  <li v-for="(elem, i) in contact" class="block__data mb-20">
                     <ul class="dato">
-                      <li> <i class="fas fa-globe mdx-20"></i> </li>
-                      <li class="xsmall-text"> Corporate Location 1600 Amphitheatre Parkway London WC1 1BA </li>
-                    </ul>
-                  </li>
-                  <li class="block__data mt-20">
-                    <ul class="dato">
-                      <li> <i class="fas fa-home  mdx-20"></i> </li>
-                      <li class="xsmall-text"> Residential Lcation  9521 Broadsberry Avenue Paddington RC7 9ZA </li>
-                    </ul>
-                  </li>
-                  <li class="block__data mt-20">
-                    <ul class="dato">
-                      <li> <i class="fas fa-phone  mdx-20"></i> </li>
-                      <li class="xsmall-text"> 1.800.458.556 / 1.800.532.2112 </li>
-                    </ul>
-                  </li>
-                  <li class="block__data mt-20">
-                    <ul class="dato">
-                      <li> <i class="far fa-envelope  mdx-20"></i> </li>
-                      <li class="xsmall-text"> info@your-domain.com </li>
-                    </ul>
-                  </li>
-                  <li class="block__data mt-20">
-                    <ul class="dato">
-                      <li> <i class="far fa-clock  mdx-20"></i> </li>
-                      <li class="xsmall-text"> Monday - Friday: 9:00 AM - 6:00 PM </li>
-                    </ul>
-                  </li>
-                  <li class="block__data mt-20">
-                    <ul class="dato">
-                      <li> <i class="far fa-clock  mdx-20"></i> </li>
-                      <li class="xsmall-text"> Saturday - Sunday  9:00 AM - 12:00 PM </li>
+                      <li> <i :class="elem.icon  + ' ' + 'mdx-20'"></i> </li>
+                      <li class="xsmall-text">{{elem.info}}</li>
                     </ul>
                   </li>
                 </ul>
               </li>
-              <li class="li4">
-                <h5 class="mb-50">FIND US</h5>
-                <img src="img/map.png-Notti" alt="map">
+
+              <li :class="'li' + footer[3].order" v-for="(elem) in maps">
+                <h5 class="mb-50">{{footer[3].title}}</h5>
+                <img :src="'img/' + elem.img" alt="map">
               </li>
             </ul>
           </div>
         </div>
         <div class="footer__copyright pdx-20 psx-20">
           <div class="note">
-            <h4 class="xsmall-text">COPYRIGHT 2012-2015 AVADA THEME BY THEME FUSION | ALL RIGHTS RESERVED | POWERED BY WORDPRESS</h4>
+            <h4 class="xsmall-text">{{testo_COPYRIGHT}}</h4>
           </div>
-          <div class="social">
-            <i class="fab fa-facebook-f msx-10"></i>
-            <i class="fab fa-twitter msx-10"></i>
-            <i class="fab fa-youtube msx-10"></i>
-            <i class="fab fa-instagram msx-10"></i>
+          <div class="social" v-if="social.length > 0">
+            <i v-for="(elem) in social" :class="'fab' + ' ' + elem.icon + ' ' + 'msx-10'"></i>
           </div>
         </div>
       </footer>
