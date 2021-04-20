@@ -1,0 +1,26 @@
+.hero__main{
+  @include my-display-flex;
+  height: 500px;
+  width: 100%;
+  align-items: center;
+  background: url("../img/bg-work.jpg") no-repeat center center;
+  background-size: cover;
+  .wrapper{
+    height: 100%;
+    width: $container-small;
+    margin: 0 auto;
+    @include my-display-flex;
+    justify-content: space-between;
+    align-items: center;
+    .content__sx{
+      max-width: calc(60% - 50px);
+      h3{font-weight: 400; color: $color-white;}
+      hr{width: 200px; border-color: $color-primary;}
+      p{font-weight: 300; line-height: 30px; color: $color-white; font-weight: 500;}
+    }
+    .content__dx{
+      max-width: calc(40% - 50px);
+      h5{text-align: center; color: $color-white; font-weight: 400;}
+    }
+  }
+}
