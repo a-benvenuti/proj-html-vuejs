@@ -1,0 +1,96 @@
+.footer{
+  height: 100vh;
+  width: 100%;
+  background-color: $color-secondary900;
+  &__contact{
+    height: 85%;
+    width: 100%;
+    background-color: $color-secondary800;
+    @include my-display-flex;
+    justify-content: center;
+    align-items: center;
+    .wrapper{
+      width: 100%;
+      max-width: $container-big;
+      .footer__list{
+        @include my-display-flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        li{h5{color: $color-primary500;}}
+        .li1{
+          width: 23%;
+          @include my-display-flex;
+          flex-direction: column;
+          img{width: 60%; height: auto;}
+          .li__content1{
+            width: 100%;
+            span{line-height: 25px; color: $color-secondary;}
+          }
+        }
+        .li2{
+          width: 26%;
+          @include my-display-flex;
+          flex-direction: column;
+          .li__content2{
+            width: 100%;
+            .tweet{
+              .tweet__user{
+                @include my-display-flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                .user__name{
+                  @include my-display-flex;
+                  img{height: 40px; width: auto; border-radius: 50%;}
+                  h5,h6{color: $color-white;}
+                }
+                .fa-twitter{color: $color-secondary;}
+              }
+              .tweetter{
+                @include my-display-flex;
+                flex-direction: column;
+                li{
+                  color: $color-white;
+                  img{width: 100%; height: auto; border-radius: 5px;}
+                  span{color: $color-bluelink;}
+                }
+              }
+              .share{
+                @include my-display-flex;
+                justify-content: space-between;
+                align-items: center;
+                li{color: $color-secondary; font-size: $font-small;}
+              }
+            }
+          }
+        }
+        .li3{
+          width: 15%;
+          @include my-display-flex;
+          flex-direction: column;
+          .li__content3{
+            width: 100%;
+            .block__data{
+              .dato{@include my-display-flex; li, i{color: $color-secondary}}
+            }
+          }
+        }
+        .li4{
+          width: 21%;
+          @include my-display-flex;
+          flex-direction: column;
+          img{width: 100%; height: auto;}
+        }
+      }
+    }
+  }
+  &__copyright{
+    height: 15%;
+    width: 100%;
+    @include my-display-flex;
+    justify-content: space-between;
+    align-items: center;
+    .note{h4{font-weight: 400;}}
+    .social{i{color: $color-secondary500;}}
+  }
+}
