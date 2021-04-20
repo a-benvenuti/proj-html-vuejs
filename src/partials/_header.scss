@@ -1,8 +1,8 @@
 .header{
-  height: 160px;
+  height: 140px;
   @include my-display-flex;
   justify-content: space-between;
-  &__logo img{width: 280px; cursor: pointer;}
+  &__logo img{height: 80px; width: auto; cursor: pointer;}
   &__navbar{@include my-display-flex; align-items: center; position: relative;}
 }
 .fa-caret-down{

@@ -1,5 +1,5 @@
 .box1{
-  height: 100vh;
+  height: calc(100vh - 120px);
   .container{
     width: 100%;
     max-width: $container-xsmall;
