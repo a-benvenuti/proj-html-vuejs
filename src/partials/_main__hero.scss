@@ -24,3 +24,22 @@
     }
   }
 }
+@media (max-width: $tablet-small) {
+  .hero__main{
+    .wrapper{
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      .content__sx{
+        max-width: 100%;
+        text-align: center;
+        margin-right: 0px;
+        hr{margin: 0 auto;}
+      }
+      .content__dx{
+        max-width: 100%;
+        margin-left: 0px;
+      }
+    }
+  }
+}
