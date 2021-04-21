@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- GoogleFont -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- /GoogleFont -->
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
@@ -25,22 +25,29 @@
     <div id="root">
       <!-- header -->
       <header class="header p-30">
+        <!-- logo -->
         <div class="header__logo">
           <img :src="logo_nav" alt="logo">
         </div>
+        <!-- /logo -->
+        <!-- navbar -->
         <ul class="header__navbar" v-if="navbar.length > 0">
           <li v-for="(elem) in navbar" class="mdx-30"> <a :href="'#anchor' + elem.numAncor">{{elem.label}}</a> </li>
           <li v-for="(elem) in nav_btn" class="btn primary">{{elem.label}}</li>
           <li><i class="fas fa-caret-down"></i></li>
         </ul>
+        <!-- /navbar -->
+        <!-- hamburger menu -->
         <div class="hamburger">
           <i class="fas fa-bars"></i>
         </div>
+        <!-- /hamburger menu -->
       </header>
       <!-- /header -->
 
-      <!-- hero -->
+      <!-- hero banner-->
       <a name="anchor_1"></a>
+
       <div class="hero">
         <div class="hero__content">
           <h1 class="xbig-text">BUILDING INSPIRING SPACES</h1>
@@ -49,15 +56,18 @@
           <a href="#" class="btn primary">GET A QUOTE TODAY</a>
         </div>
       </div>
+      <!-- sezione con btn help -->
       <section class="help">
         <h2 class="pt-40 med-text">Do You Have A Construction Project We Can Help With?</h2>
         <a href="#" class="btn border">GET A FREE QUOTE</a>
       </section>
-      <!-- /hero -->
+      <!-- /sezione con btn help -->
+      <!-- /hero banner-->
 
       <!-- main -->
       <main>
         <a name="anchor_2"></a>
+        <!-- 1° sezione del main -->
         <div class="box1 mt-50">
           <div class="container mt-50">
             <h3 class="med-text pt-50 pb-30">Specialist in Modern Construction</h3>
@@ -107,6 +117,7 @@
             </div>
           </div>
         </div>
+        <!-- 2° sezione del main -->
         <div class="curve1">
           <div class="curve1__line-top"></div>
           <div class="curve1__img">
@@ -136,6 +147,7 @@
           <div class="curve1__line-bottom"></div>
         </div>
         <a name="anchor_4"></a>
+        <!-- 3° sezione del main -->
         <div class="box2 pb-50">
           <div class="container">
             <h3 class="med-text pb-30">Explore Recent Work</h3>
@@ -184,6 +196,7 @@
           </div>
         </div>
         <a name="anchor_3"></a>
+        <!-- 4° sezione del main -->
         <div class="box3">
           <div class="container">
             <h3 class="med-text pt-50 pb-30">Our Core Values</h3>
@@ -225,6 +238,7 @@
             </div>
           </div>
         </div>
+        <!-- 5° sezione del main -->
         <div class="curve2">
           <div class="curve2__line-top"></div>
           <div class="curve2__img">
@@ -250,6 +264,7 @@
           <div class="curve2__line-bottom"></div>
         </div>
         <a name="anchor_5"></a>
+        <!-- 6° sezione del main -->
         <div class="box4 pb-50">
           <div class="container">
             <h3 class="med-text  pb-30">Latest News</h3>
@@ -321,6 +336,7 @@
             <div class="line__bottom"></div>
           </div>
         </div>
+        <!-- partners del main -->
         <div class="partners__main">
           <div class="container mt-50">
             <h3 class="med-text pt-50 pb-30">Trusted Partners</h3>
@@ -335,6 +351,7 @@
             <img src="img/partner-5.png" alt="p5">
           </div>
         </div>
+        <!-- hero del main -->
         <div class="hero__main">
           <div class="wrapper">
             <div class="content__sx mdx-50">
@@ -414,6 +431,7 @@
             </ul>
           </div>
         </div>
+        <!-- sezione del COPYRIGHT -->
         <div class="footer__copyright pdx-20 psx-20">
           <div class="note">
             <h4 class="xsmall-text">{{testo_COPYRIGHT}}</h4>
