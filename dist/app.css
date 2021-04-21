@@ -480,9 +480,6 @@ p {
   border-top-left-radius: 50%;
 }
 
-.box2 {
-  height: 100vh;
-}
 .box2 .container {
   width: 100%;
   max-width: 800px;
@@ -524,7 +521,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 99%;
   background-color: #f9d03f;
   opacity: 0;
   display: flex;
@@ -552,7 +549,7 @@ p {
   opacity: 1;
 }
 .box2 .line {
-  height: 20px;
+  height: 21px;
   max-width: 920px;
   margin: 0 auto;
   display: flex;
@@ -563,7 +560,7 @@ p {
   font-weight: 400;
 }
 .box2 .line .line__top, .box2 .line .line__bottom {
-  height: 1px;
+  height: 2px;
   width: 31%;
   background-color: #bcbcbc;
 }
@@ -706,6 +703,118 @@ p {
   bottom: 0px;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
+}
+
+.box4 {
+  background-color: #f1f1f1;
+}
+.box4 .container {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+.box4 .container h3 {
+  font-weight: 400;
+}
+.box4 .container hr {
+  width: 300px;
+  margin: 0 auto;
+  border-color: #f9d03f;
+}
+.box4 .container p {
+  font-weight: 300;
+  line-height: 30px;
+}
+.box4 .box4__card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+}
+.box4 .box4__card .card {
+  background-color: white;
+  width: 31%;
+  text-align: center;
+}
+.box4 .box4__card .card .img_top {
+  position: relative;
+}
+.box4 .box4__card .card .img_top img {
+  width: 100%;
+  height: auto;
+}
+.box4 .box4__card .card .img_top .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f9d03f;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box4 .box4__card .card .img_top .overlay i {
+  font-size: 20px;
+  color: #f9d03f;
+  border-radius: 50%;
+  background-color: white;
+}
+.box4 .box4__card .card .img_top .overlay h5 {
+  color: white;
+  font-weight: 400;
+}
+.box4 .box4__card .card .img_top .overlay h6 {
+  color: white;
+  font-weight: 600;
+}
+.box4 .box4__card .card .img_top .overlay a {
+  background-color: #ffe382;
+}
+.box4 .box4__card .card .img_top:hover .overlay {
+  opacity: 1;
+}
+.box4 .box4__card .card .news {
+  text-align: left;
+}
+.box4 .box4__card .card .news p {
+  line-height: 20px;
+}
+.box4 .box4__card .card .news .line_card {
+  width: 100%;
+  height: 1px;
+  background-color: #bcbcbc;
+}
+.box4 .box4__card .card .news h4 {
+  font-weight: 500;
+}
+.box4 .box4__card .card .news h6 {
+  font-weight: 400;
+}
+.box4 .line {
+  height: 21px;
+  max-width: 920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box4 .line h4 {
+  font-weight: 400;
+}
+.box4 .line .line__top, .box4 .line .line__bottom {
+  height: 2px;
+  width: 31%;
+  background-color: white;
+}
+.box4 .line .line__top {
+  align-self: flex-start;
+}
+.box4 .line .line__bottom {
+  align-self: flex-end;
 }
 
 .partners__main {

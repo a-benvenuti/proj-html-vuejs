@@ -1,0 +1,65 @@
+.box4{
+  // height: 100vh;
+  background-color: $color-secondary200;
+  .container{
+    width: 100%;
+    max-width: $container-xsmall;
+    text-align: center;
+    margin: 0 auto;
+    h3{font-weight: 400;}
+    hr{width: 300px; margin: 0 auto; border-color: $color-primary;}
+    p{font-weight: 300; line-height: 30px;}
+  }
+  .box4__card{
+    @include my-display-flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: $container-small;
+    margin: 0 auto;
+    .card{
+      background-color: $color-white;
+      width: 31%;
+      text-align: center;
+      .img_top{
+        position: relative;
+        img{width: 100%; height: auto;}
+        .overlay{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: $color-primary;
+          opacity: 0;
+          @include my-display-flex;
+          align-items: center;
+          justify-content: center;
+          i{font-size: 20px; color: $color-primary; border-radius: 50%; background-color: $color-white;}
+          h5{color: $color-white; font-weight: 400;}
+          h6{color: $color-white; font-weight: 600;}
+          a{background-color: #ffe382;}
+        }
+        &:hover .overlay{opacity: 1;}
+      }
+      .news{
+        text-align: left;
+        p{line-height: 20px;}
+        .line_card{width: 100%; height: 1px; background-color: $color-secondary;}
+        h4{font-weight: 500;}
+        h6{font-weight: 400;}
+      }
+    }
+  }
+  .line{
+    height: 21px;
+    max-width: $container-small;
+    margin: 0 auto;
+    @include my-display-flex;
+    justify-content: space-between;
+    align-items: center;
+    h4{font-weight: 400;}
+    .line__top, .line__bottom{height: 2px; width: 31%; background-color: $color-white;}
+    .line__top{align-self: flex-start;}
+    .line__bottom{align-self: flex-end;}
+  }
+}
