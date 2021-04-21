@@ -42,15 +42,40 @@
     }
   }
   .line{
-    height: 21px;
+    height: 22px;
     max-width: $container-small;
     margin: 0 auto;
     @include my-display-flex;
     justify-content: space-between;
     align-items: center;
     h4{font-weight: 400;}
-    .line__top, .line__bottom{height: 2px; width: 31%; background-color: $color-secondary;}
+    .line__top, .line__bottom{height: 2px; width: 30%; background-color: $color-secondary;}
     .line__top{align-self: flex-start;}
     .line__bottom{align-self: flex-end;}
+  }
+}
+@media (max-width: $tablet-new) {
+  .box2{
+    margin-top: 80px;
+    .box2__card{
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 100%;
+      .card{width: 51%;}
+    }
+  }
+}
+@media (max-width: $phone-wide) {
+  .box2{
+    .box2__card{
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 100%;
+      .card{width: 81%;}
+    }
+    .line{
+      justify-content: center;
+      .line__top, .line__bottom{display: none;}
+    }
   }
 }

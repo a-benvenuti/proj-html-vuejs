@@ -290,6 +290,7 @@ p {
   height: 140px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .header__logo img {
   height: 80px;
@@ -301,15 +302,30 @@ p {
   align-items: center;
   position: relative;
 }
+.header .hamburger {
+  display: none;
+  cursor: pointer;
+  color: #666665;
+  font-size: 30px;
+}
 
 .fa-caret-down {
   font-size: 30px;
   color: white;
   position: absolute;
-  bottom: -48px;
+  bottom: -68px;
   left: 20px;
 }
 
+@media (max-width: 1024px) {
+  .header__navbar {
+    display: none;
+  }
+
+  .header .hamburger {
+    display: block;
+  }
+}
 .hero {
   display: flex;
   height: calc(100vh - 120px);
@@ -380,7 +396,7 @@ p {
 }
 .box1 .box1__card .card {
   position: relative;
-  width: 25%;
+  width: 23%;
   background-color: #f1f1f1;
   cursor: pointer;
   border-radius: 5px;
@@ -423,6 +439,27 @@ p {
   opacity: 1;
 }
 
+@media (max-width: 1024px) {
+  .box1 {
+    height: auto;
+  }
+  .box1 .box1__card {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+  }
+  .box1 .box1__card .card {
+    margin: 10px;
+    width: calc(50% - 40px);
+  }
+}
+@media (max-width: 640px) {
+  .box1 .box1__card .card {
+    margin: 20px;
+    width: calc(100% - 80px);
+  }
+}
 .curve1 {
   height: 100vh;
   width: 100%;
@@ -480,6 +517,11 @@ p {
   border-top-left-radius: 50%;
 }
 
+@media (max-width: 768px) {
+  .curve1 {
+    display: none;
+  }
+}
 .box2 .container {
   width: 100%;
   max-width: 800px;
@@ -549,7 +591,7 @@ p {
   opacity: 1;
 }
 .box2 .line {
-  height: 21px;
+  height: 22px;
   max-width: 920px;
   margin: 0 auto;
   display: flex;
@@ -561,7 +603,7 @@ p {
 }
 .box2 .line .line__top, .box2 .line .line__bottom {
   height: 2px;
-  width: 31%;
+  width: 30%;
   background-color: #bcbcbc;
 }
 .box2 .line .line__top {
@@ -571,6 +613,35 @@ p {
   align-self: flex-end;
 }
 
+@media (max-width: 912px) {
+  .box2 {
+    margin-top: 80px;
+  }
+  .box2 .box2__card {
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  .box2 .box2__card .card {
+    width: 51%;
+  }
+}
+@media (max-width: 480px) {
+  .box2 .box2__card {
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  .box2 .box2__card .card {
+    width: 81%;
+  }
+  .box2 .line {
+    justify-content: center;
+  }
+  .box2 .line .line__top, .box2 .line .line__bottom {
+    display: none;
+  }
+}
 .box3 {
   height: 90vh;
   background-color: #f1f1f1;
@@ -640,6 +711,45 @@ p {
   line-height: 30px;
 }
 
+@media (max-width: 912px) {
+  .box3 {
+    height: auto;
+  }
+  .box3 .box3__card {
+    flex-direction: column;
+    width: auto;
+    max-width: auto;
+  }
+  .box3 .box3__card .card {
+    display: flex;
+    height: 100%;
+    width: auto;
+    text-align: left;
+  }
+  .box3 .box3__card .card i:hover {
+    background-color: transparent;
+    color: #fed23f;
+  }
+  .box3 .box3__card .card .fa-home {
+    background-color: transparent;
+    color: #40a18f;
+  }
+  .box3 .box3__card .card .fa-cog {
+    background-color: transparent;
+    color: #6586b1;
+  }
+  .box3 .box3__card .card .fa-users {
+    background-color: transparent;
+    color: #fe6f1d;
+  }
+  .box3 .box3__card .card .fa-lightbulb {
+    background-color: transparent;
+    color: #95cd4e;
+  }
+  .box3 .box3__card .card hr {
+    display: none;
+  }
+}
 .curve2 {
   height: 100vh;
   width: 100%;
@@ -705,6 +815,11 @@ p {
   border-top-left-radius: 50%;
 }
 
+@media (max-width: 768px) {
+  .curve2 {
+    display: none;
+  }
+}
 .box4 {
   background-color: #f1f1f1;
 }
@@ -817,6 +932,34 @@ p {
   align-self: flex-end;
 }
 
+@media (max-width: 768px) {
+  .box4 {
+    padding-top: 80px;
+  }
+  .box4 .box4__card {
+    justify-content: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  .box4 .box4__card .card {
+    margin: 10px;
+    width: calc(50% - 40px);
+  }
+}
+@media (max-width: 560px) {
+  .box4 .box4__card .card {
+    margin: 20px;
+    width: calc(100% - 40px);
+  }
+}
+@media (max-width: 480px) {
+  .box4 .line {
+    justify-content: center;
+  }
+  .box4 .line .line__top, .box4 .line .line__bottom {
+    display: none;
+  }
+}
 .partners__main {
   height: 420px;
   width: 100%;
@@ -852,6 +995,20 @@ p {
   height: auto;
 }
 
+@media (max-width: 912px) {
+  .partners__main {
+    height: auto;
+  }
+  .partners__main .wrapper {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .partners__main .wrapper img {
+    width: 40%;
+    height: auto;
+  }
+}
 .hero__main {
   display: flex;
   height: 500px;

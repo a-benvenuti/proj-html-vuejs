@@ -33,3 +33,25 @@
     }
   }
 }
+@media (max-width: $tablet-new) {
+  .box3{
+    height: auto;
+    .box3__card{
+      flex-direction: column;
+      width: auto;
+      max-width: auto;
+      .card{
+        @include my-display-flex;
+        height: 100%;
+        width: auto;
+        text-align: left;
+        i:hover{background-color: transparent; color: $color-primary500;}
+        .fa-home{background-color: transparent; color: $color-lightblue;}
+        .fa-cog{background-color: transparent; color: $color-lightpurple;}
+        .fa-users{background-color: transparent; color: $color-coral;}
+        .fa-lightbulb{background-color: transparent; color: $color-lightgreen;}
+        hr{display: none;}
+      }
+    }
+  }
+}

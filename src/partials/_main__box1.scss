@@ -17,7 +17,7 @@
     margin: 0 auto;
     .card{
       position: relative;
-      width: 25%;
+      width: 23%;
       background-color: $color-secondary200;
       cursor: pointer;
       border-radius: 5px;
@@ -40,6 +40,25 @@
         a{background-color: #ffe382;}
       }
       &:hover .overlay{opacity: 1;}
+    }
+  }
+}
+@media (max-width: $tablet-wide) {
+  .box1{
+    height: auto;
+    .box1__card{
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      max-width: 100%;
+      .card{ margin: 10px; width: calc(50% - 40px);}
+    }
+  }
+}
+@media (max-width: $tablet-small) {
+  .box1{
+    .box1__card{
+      .card{ margin: 20px; width: calc(100% - 80px);}
     }
   }
 }

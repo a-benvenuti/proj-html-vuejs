@@ -41,3 +41,6 @@
     border-top-left-radius:  50%;
   }
 }
+@media (max-width: $tablet) {
+  .curve2{display: none;}
+}

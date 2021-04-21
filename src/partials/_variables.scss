@@ -1,35 +1,47 @@
-// colors palette
+// ----------colors palette---------
 $color-white: white;
   // yellow
-$color-primary: #f9d03f;
+$color-primary:    #f9d03f;
 $color-primary500: #fed23f;
   // grey
 $color-secondary200: #f1f1f1;
-$color-secondary: #bcbcbc;
+$color-secondary:    #bcbcbc;
 $color-secondary500: #6b6868;
 $color-secondary700: #666665;
 $color-secondary800: #282826;
 $color-secondary900: #1e1e1e;
  // extra
-$color-bluelink: #045287;
-$color-lightblue: #40a18f;
+$color-bluelink:    #045287;
+$color-lightblue:   #40a18f;
 $color-lightpurple: #6586b1;
-$color-lightgreen: #95cd4e;
-$color-coral: #fe6f1d;
+$color-lightgreen:  #95cd4e;
+$color-coral:       #fe6f1d;
+// ----------/colors palette---------
 
 // font-size
-$font-xsmall: 11px;
-$font-small: 14px;
-$font-normal: 20px;
-$font-med: 25px;
-$font-big: 35px;
-$font-xbig: 50px;
+$font-xsmall:  11px;
+$font-small:   14px;
+$font-normal:  20px;
+$font-med:     25px;
+$font-big:     35px;
+$font-xbig:    50px;
 
 // container
-$container-big: 1440px;
-$container-basic: 1280px;
-$container-small: 920px;
+$container-big:    1440px;
+$container-basic:  1280px;
+$container-small:  920px;
 $container-xsmall: 800px;
 
 // truncate
 $truncation-boundary: 60px;
+
+// responsive
+$phone:        400px;
+$phone-wide:   480px;
+$phablet:      560px;
+$tablet-small: 640px;
+$tablet:       768px;
+$tablet-new:   912px;
+$tablet-wide:  1024px;
+$desktop:      1248px;
+$desktop-wide: 1440px;

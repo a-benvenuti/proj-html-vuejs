@@ -33,6 +33,9 @@
           <li v-for="(elem) in nav_btn" class="btn primary">{{elem.label}}</li>
           <li><i class="fas fa-caret-down"></i></li>
         </ul>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
       </header>
       <!-- /header -->
 
@@ -62,8 +65,8 @@
             <p class="pt-40 mb-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           </div>
           <div class="box1__card">
-            <div class="card p-10 msx-20 mdx-20">
-              <i class="far fa-building p-20"></i>
+            <div class="card p-10">
+              <i class="far fa-building p-20 mt"></i>
               <h3 class="big-text pt-20 pb-20">Buildings</h3>
               <p class="small-text">Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
               <div class="overlay">
@@ -72,7 +75,7 @@
                 <a class="btn primary">GET QUOTE</a>
               </div>
             </div>
-            <div class="card p-10 msx-20 mdx-20">
+            <div class="card p-10">
               <i class="fas fa-sync p-20"></i>
               <h3 class="big-text pt-20 pb-20">Renovate</h3>
               <p class="small-text">Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
@@ -82,7 +85,7 @@
                 <a class="btn primary">GET QUOTE</a>
               </div>
             </div>
-            <div class="card p-10 msx-20 mdx-20">
+            <div class="card p-10">
               <i class="fas fa-home p-20"></i>
               <h3 class="big-text pt-20 pb-20">Construct</h3>
               <p class="small-text">Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
@@ -92,7 +95,7 @@
                 <a class="btn primary">GET QUOTE</a>
               </div>
             </div>
-            <div class="card p-10 msx-20 mdx-20">
+            <div class="card p-10">
               <i class="fas fa-truck p-20"></i>
               <h3 class="big-text pt-20 pb-20">Exclusive</h3>
               <p class="small-text">Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
@@ -140,7 +143,7 @@
             <p class="pt-40 mb-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco.</p>
           </div>
           <div class="box2__card">
-            <div class="card msx-20 mdx-20 mb-40">
+            <div class="card mb-40">
               <img src="img/building-1.jpg" alt="build1">
               <div class="overlay p-50">
                 <div class="wrapper-over">
@@ -151,7 +154,7 @@
                 </div>
               </div>
             </div>
-            <div class="card msx-20 mdx-20 mb-40">
+            <div class="card mb-40">
               <img src="img/building-2.jpg" alt="build2">
               <div class="overlay p-50">
                 <div class="wrapper-over">
@@ -162,7 +165,7 @@
                 </div>
               </div>
             </div>
-            <div class="card msx-20 mdx-20 mb-40">
+            <div class="card mb-40">
               <img src="img/building-3.jpg" alt="build3">
               <div class="overlay p-50">
                 <div class="wrapper-over">
@@ -174,7 +177,7 @@
               </div>
             </div>
           </div>
-          <div class="line psx-20 pdx-20">
+          <div class="line">
             <div class="line__top"></div>
             <h4 class="small-text mt-50 mb-50">VIEW ALL PROJECTS</h4>
             <div class="line__bottom"></div>
@@ -190,27 +193,35 @@
           <div class="box3__card">
             <div class="card p-10 mdx-20">
               <i class="fas fa-home p-30"></i>
-              <h3 class="small-text pt-20 pb-20">Great Services</h3>
-              <hr>
-              <p class="xsmall-text mt-20">Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur. adipisci velit, sed quia.</p>
+              <div>
+                <h3 class="small-text pt-20 pb-20">Great Services</h3>
+                <hr>
+                <p class="xsmall-text mt-20">Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur. adipisci velit, sed quia.</p>
+              </div>
             </div>
             <div class="card p-10 mdx-20">
               <i class="fas fa-cog p-30"></i>
-              <h3 class="small-text pt-20 pb-20">Highest Standards</h3>
-              <hr>
-              <p class="xsmall-text mt-20">Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur. adipisci velit, sed quia.</p>
+              <div>
+                <h3 class="small-text pt-20 pb-20">Highest Standards</h3>
+                <hr>
+                <p class="xsmall-text mt-20">Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur. adipisci velit, sed quia.</p>
+              </div>
             </div>
             <div class="card p-10 mdx-20">
               <i class="fas fa-users p-30"></i>
-              <h3 class="small-text pt-20 pb-20">Professional Team</h3>
-              <hr>
-              <p class="xsmall-text mt-20">Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur. adipisci velit, sed quia.</p>
+              <div>
+                <h3 class="small-text pt-20 pb-20">Professional Team</h3>
+                <hr>
+                <p class="xsmall-text mt-20">Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur. adipisci velit, sed quia.</p>
+              </div>
             </div>
             <div class="card p-10">
               <i class="far fa-lightbulb p-30"></i>
-              <h3 class="small-text pt-20 pb-20">Creative Solutions</h3>
-              <hr>
-              <p class="xsmall-text mt-20">Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur. adipisci velit, sed quia.</p>
+              <div>
+                <h3 class="small-text pt-20 pb-20">Creative Solutions</h3>
+                <hr>
+                <p class="xsmall-text mt-20">Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur. adipisci velit, sed quia.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -304,7 +315,7 @@
               </div>
             </div>
           </div>
-          <div class="line psx-10 pdx-10">
+          <div class="line">
             <div class="line__top"></div>
             <h4 class="small-text mt-50 mb-50">VIEW ALL ARTICLES</h4>
             <div class="line__bottom"></div>

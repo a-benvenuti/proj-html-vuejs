@@ -2,13 +2,24 @@
   height: 140px;
   @include my-display-flex;
   justify-content: space-between;
+  align-items: center;
   &__logo img{height: 80px; width: auto; cursor: pointer;}
   &__navbar{@include my-display-flex; align-items: center; position: relative;}
+  .hamburger{
+    display: none;
+    cursor: pointer;
+    color: $color-secondary700;
+    font-size: 30px;
+  }
 }
 .fa-caret-down{
   font-size: 30px;
   color: $color-white;
   position: absolute;
-  bottom: -48px;
+  bottom: -68px;
   left: 20px;
+}
+@media (max-width: $tablet-wide) {
+  .header__navbar{display: none;}
+  .header .hamburger{display: block;}
 }
