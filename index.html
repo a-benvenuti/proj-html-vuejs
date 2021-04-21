@@ -180,38 +180,63 @@
             <div class="line__bottom"></div>
           </div>
         </div>
-        <div class="box3 mt-50">
+        <a name="anchor_3"></a>
+        <div class="box3">
           <div class="container mt-50">
             <h3 class="med-text pt-50 pb-30">Our Core Values</h3>
             <hr>
             <p class="pt-40 mb-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco</p>
           </div>
           <div class="box3__card">
-            <div class="card p-10 msx-20 mdx-20">
+            <div class="card p-10 mdx-20">
               <i class="fas fa-home p-30"></i>
-              <h3 class="normal-text pt-20 pb-20">Great Services</h3>
+              <h3 class="small-text pt-20 pb-20">Great Services</h3>
               <hr>
-              <p class="small-text mt-20">Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur. adipisci velit, sed quia.</p>
+              <p class="xsmall-text mt-20">Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur. adipisci velit, sed quia.</p>
             </div>
-            <div class="card p-10 msx-20 mdx-20">
+            <div class="card p-10 mdx-20">
               <i class="fas fa-cog p-30"></i>
-              <h3 class="normal-text pt-20 pb-20">Highest Standards</h3>
+              <h3 class="small-text pt-20 pb-20">Highest Standards</h3>
               <hr>
-              <p class="small-text mt-20">Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur. adipisci velit, sed quia.</p>
+              <p class="xsmall-text mt-20">Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur. adipisci velit, sed quia.</p>
             </div>
-            <div class="card p-10 msx-20 mdx-20">
+            <div class="card p-10 mdx-20">
               <i class="fas fa-users p-30"></i>
-              <h3 class="normal-text pt-20 pb-20">Professional Team</h3>
+              <h3 class="small-text pt-20 pb-20">Professional Team</h3>
               <hr>
-              <p class="small-text mt-20">Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur. adipisci velit, sed quia.</p>
+              <p class="xsmall-text mt-20">Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur. adipisci velit, sed quia.</p>
             </div>
-            <div class="card p-10 msx-20 mdx-20">
+            <div class="card p-10">
               <i class="far fa-lightbulb p-30"></i>
-              <h3 class="normal-text pt-20 pb-20">Creative Solutions</h3>
+              <h3 class="small-text pt-20 pb-20">Creative Solutions</h3>
               <hr>
-              <p class="small-text mt-20">Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur. adipisci velit, sed quia.</p>
+              <p class="xsmall-text mt-20">Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur. adipisci velit, sed quia.</p>
             </div>
           </div>
+        </div>
+        <div class="curve2">
+          <div class="curve2__line-top"></div>
+          <div class="curve2__img">
+            <div class="description">
+              <h3 class="med-text mb-20">Our Home Owners Say</h3>
+              <hr>
+              <img v-if="time != 1" class="mt-20" src="img/testimonial.jpg" alt="newhome">
+              <img v-else class="mt-20" src="img/testimonial-2.jpg" alt="newhome">
+              <p v-if="time != 1" class="mt-20 mb-20">"No man but feels more of a man in the world if he have but a bit of ground that he can call his own. However small it is on the surface, it is four thousand miles deep: and that is a very heandsome property."</p>
+              <p v-else class="mt-20 mb-20">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."</p>
+              <h4 v-if="time != 1" class="mb-10">SARAH GALLAGHER &#183; NEW HOME OWNER</h4>
+              <h4 v-else class="mb-10">HARRY SMITH &#183; NEW HOME OWNER</h4>
+              <div v-if="time != 1">
+                <i @click="timeDown" class="fas fa-circle"></i>
+                <i @click="timeUp" class="far fa-circle"></i>
+              </div>
+              <div v-if="time == 1">
+                <i @click="timeDown" class="far fa-circle"></i>
+                <i @click="timeUp" class="fas fa-circle"></i>
+              </div>
+            </div>
+          </div>
+          <div class="curve2__line-bottom"></div>
         </div>
         <div class="partners__main">
           <div class="container mt-50">

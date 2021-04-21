@@ -3,6 +3,7 @@ var app = new Vue(
     el: '#root',
     // -------------------------------------------------------------------------
     data: {
+      time: 0,
       testo_COPYRIGHT: 'COPYRIGHT 2012-2015 AVADA THEME BY THEME FUSION | ALL RIGHTS RESERVED | POWERED BY WORDPRESS',
       // percorsi logo
       logo_nav: 'img/logo.png',
@@ -113,24 +114,37 @@ var app = new Vue(
         {
           name: 'twitter',
           icon: 'fa-twitter',
-          link: 'https://it-it.facebook.com/',
+          link: 'https://twitter.com/?lang=it',
         },
         {
           name: 'youtube',
           icon: 'fa-youtube',
-          link: 'https://it-it.facebook.com/',
+          link: 'hhttps://www.youtube.com/',
         },
         {
           name: 'instagram',
           icon: 'fa-instagram',
-          link: 'https://it-it.facebook.com/',
+          link: 'https://www.instagram.com/',
         },
       ],
       // fine APi "inventate"
     },
     // -------------------------------------------------------------------------
     methods: {
-
+      timeUp: function() {
+        setTimeout(()=>
+         {
+          this.time = 1;
+        },300
+        );
+      },
+      timeDown: function() {
+        setTimeout(()=>
+         {
+          this.time = 0;
+        },300
+        );
+      },
     },
     // -------------------------------------------------------------------------
   }

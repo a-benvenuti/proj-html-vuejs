@@ -1,5 +1,5 @@
 .box3{
-  height: 100vh;
+  height: 90vh;
   background-color: $color-secondary200;
   .container{
     width: 100%;
@@ -14,14 +14,14 @@
     @include my-display-flex;
     justify-content: space-between;
     width: 100%;
-    max-width: $container-basic;
+    max-width: $container-small;
     margin: 0 auto;
     .card{
       position: relative;
       width: 25%;
       cursor: pointer;
       text-align: center;
-      i{font-size: 30px; color: $color-white; border-radius: 50%;}
+      i{font-size: 40px; color: $color-white; border-radius: 50%;}
       i:hover{background-color: $color-primary500;}
       .fa-home{background-color: $color-lightblue;}
       .fa-cog{background-color: $color-lightpurple;}

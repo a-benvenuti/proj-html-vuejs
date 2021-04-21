@@ -505,13 +505,13 @@ p {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 1280px;
+  max-width: 920px;
   margin: 0 auto;
 }
 .box2 .box2__card .card {
   position: relative;
   width: 30%;
-  height: 384px;
+  height: auto;
   cursor: pointer;
   text-align: center;
 }
@@ -532,7 +532,7 @@ p {
   justify-content: center;
 }
 .box2 .box2__card .card .overlay i {
-  font-size: 30px;
+  font-size: 20px;
   color: #f9d03f;
   border-radius: 50%;
   background-color: white;
@@ -553,7 +553,7 @@ p {
 }
 .box2 .line {
   height: 20px;
-  max-width: 1280px;
+  max-width: 920px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -575,7 +575,7 @@ p {
 }
 
 .box3 {
-  height: 100vh;
+  height: 90vh;
   background-color: #f1f1f1;
 }
 .box3 .container {
@@ -600,7 +600,7 @@ p {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 1280px;
+  max-width: 920px;
   margin: 0 auto;
 }
 .box3 .box3__card .card {
@@ -610,7 +610,7 @@ p {
   text-align: center;
 }
 .box3 .box3__card .card i {
-  font-size: 30px;
+  font-size: 40px;
   color: white;
   border-radius: 50%;
 }
@@ -641,6 +641,71 @@ p {
 }
 .box3 .box3__card .card p {
   line-height: 30px;
+}
+
+.curve2 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.curve2__line-top {
+  background-color: #f1f1f1;
+  height: 150px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.curve2__img {
+  height: 100%;
+  width: 100%;
+  background: url("../img/bg-testimonial.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.curve2__img .description {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+.curve2__img .description h3 {
+  font-weight: 400;
+  color: white;
+}
+.curve2__img .description hr {
+  width: 200px;
+  margin: 0 auto;
+  border-color: #f9d03f;
+}
+.curve2__img .description img {
+  height: 120px;
+  width: auto;
+  border-radius: 50%;
+}
+.curve2__img .description p {
+  font-weight: 600;
+  line-height: 30px;
+  color: white;
+  font-style: oblique;
+}
+.curve2__img .description h4 {
+  color: white;
+}
+.curve2__img .description i {
+  color: white;
+  cursor: pointer;
+}
+.curve2__line-bottom {
+  background-color: #f1f1f1;
+  height: 150px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
 }
 
 .partners__main {

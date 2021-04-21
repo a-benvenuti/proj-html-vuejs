@@ -1,0 +1,43 @@
+.curve2{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  &__line-top{
+    background-color: $color-secondary200;
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius:  50%;
+  }
+  &__img{
+    height: 100%;
+    width: 100%;
+    background: url("../img/bg-testimonial.jpg") no-repeat;
+    background-size: cover;
+    @include my-display-flex;
+    justify-content: center;
+    align-items: center;
+    .description{
+      max-width: $container-xsmall;
+      text-align: center;
+      margin: 0 auto;
+      h3{font-weight: 400; color: $color-white;}
+      hr{width: 200px; margin: 0 auto; border-color: $color-primary;}
+      img{height: 120px; width: auto; border-radius: 50%;}
+      p{font-weight: 600; line-height: 30px; color: $color-white; font-style: oblique;}
+      h4{color: $color-white;}
+      i{color: $color-white; cursor: pointer;}
+    }
+  }
+  &__line-bottom{
+    background-color: $color-secondary200;
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    border-top-right-radius: 50%;
+    border-top-left-radius:  50%;
+  }
+}
