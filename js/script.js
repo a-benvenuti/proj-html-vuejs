@@ -57,7 +57,7 @@ var app = new Vue(
         },
       ],
       // fine struttura header e footer
-      // APi "inventate"
+
       tweet: [
         {
           numberID: null,
@@ -101,7 +101,7 @@ var app = new Vue(
       maps: [
         {
           city: 'Notting Hill',
-          linkMaps: 'linkGoogle',
+          linkMaps: 'https://www.google.it/maps/place/Notting+Hill,+Londra,+Regno+Unito/@51.5157254,-0.2094934,17z/data=!4m5!3m4!1s0x48760fe2d0cda3a1:0x9020e6e0f234ea4a!8m2!3d51.5160125!4d-0.2090148',
           img: 'map.png-Notti',
         }
       ],
@@ -119,7 +119,7 @@ var app = new Vue(
         {
           name: 'youtube',
           icon: 'fa-youtube',
-          link: 'hhttps://www.youtube.com/',
+          link: 'https://www.youtube.com/',
         },
         {
           name: 'instagram',
@@ -127,7 +127,7 @@ var app = new Vue(
           link: 'https://www.instagram.com/',
         },
       ],
-      // fine APi "inventate"
+
     },
     // -------------------------------------------------------------------------
     methods: {

@@ -4,11 +4,11 @@
   justify-content: space-between;
   align-items: center;
   &__logo img{height: 80px; width: auto; cursor: pointer;}
-  &__navbar{@include my-display-flex; align-items: center; position: relative;}
+  &__navbar{@include my-display-flex; align-items: center; position: relative; li:first-child a{color: $color-primary500;}}
   .hamburger{
     display: none;
     cursor: pointer;
-    color: $color-secondary700;
+    color: $color-primary500;
     font-size: 30px;
   }
 }

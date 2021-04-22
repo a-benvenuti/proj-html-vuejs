@@ -18,6 +18,9 @@
     <!-- css -->
     <link rel="stylesheet" href="dist/app.css">
     <!-- /css -->
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href=""/>
+    <!-- /favicon -->
     <title>Avada Construction</title>
   </head>
   <body>
@@ -371,7 +374,7 @@
       <!-- footer -->
       <footer class="footer">
         <div class="footer__contact">
-          <div class="wrapper pt-50">
+          <div class="wrapper ">
             <ul class="footer__list" v-if="footer.length > 0">
               <li :class="'li' + footer[0].order">
                 <img :src="logo_footer" alt="logofooter">
@@ -426,7 +429,7 @@
 
               <li :class="'li' + footer[3].order" v-for="(elem) in maps">
                 <h5 class="mb-50">{{footer[3].title}}</h5>
-                <img :src="'img/' + elem.img" alt="map">
+                <a :href="elem.linkMaps"> <img :src="'img/' + elem.img" alt="map"> </a>
               </li>
             </ul>
           </div>
@@ -437,7 +440,7 @@
             <h4 class="xsmall-text">{{testo_COPYRIGHT}}</h4>
           </div>
           <div class="social" v-if="social.length > 0">
-            <i v-for="(elem) in social" :class="'fab' + ' ' + elem.icon + ' ' + 'msx-10'"></i>
+            <a v-for="(elem) in social" :href="elem.link"> <i :class="'fab' + ' ' + elem.icon + ' ' + 'msx-10'"> </i> </a>
           </div>
         </div>
       </footer>

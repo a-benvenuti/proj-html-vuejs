@@ -1,7 +1,3 @@
-body {
-  font-family: "Work Sans", sans-serif;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -286,6 +282,45 @@ p {
   color: #6b6868;
 }
 
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.box1 .container,
+.box2 .container,
+.box3 .container,
+.box4 .container,
+.partners__main .container {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+.box1 .container h3,
+.box2 .container h3,
+.box3 .container h3,
+.box4 .container h3,
+.partners__main .container h3 {
+  font-weight: 400;
+}
+.box1 .container hr,
+.box2 .container hr,
+.box3 .container hr,
+.box4 .container hr,
+.partners__main .container hr {
+  width: 300px;
+  margin: 0 auto;
+  border-color: #f9d03f;
+}
+.box1 .container p,
+.box2 .container p,
+.box3 .container p,
+.box4 .container p,
+.partners__main .container p {
+  font-weight: 300;
+  line-height: 30px;
+}
+
 .header {
   height: 140px;
   display: flex;
@@ -302,10 +337,13 @@ p {
   align-items: center;
   position: relative;
 }
+.header__navbar li:first-child a {
+  color: #fed23f;
+}
 .header .hamburger {
   display: none;
   cursor: pointer;
-  color: #666665;
+  color: #fed23f;
   font-size: 30px;
 }
 
@@ -368,24 +406,6 @@ p {
 
 .box1 {
   height: calc(100vh - 120px);
-}
-.box1 .container {
-  width: 100%;
-  max-width: 800px;
-  text-align: center;
-  margin: 0 auto;
-}
-.box1 .container h3 {
-  font-weight: 400;
-}
-.box1 .container hr {
-  width: 300px;
-  margin: 0 auto;
-  border-color: #f9d03f;
-}
-.box1 .container p {
-  font-weight: 300;
-  line-height: 30px;
 }
 .box1 .box1__card {
   display: flex;
@@ -522,24 +542,6 @@ p {
     display: none;
   }
 }
-.box2 .container {
-  width: 100%;
-  max-width: 800px;
-  text-align: center;
-  margin: 0 auto;
-}
-.box2 .container h3 {
-  font-weight: 400;
-}
-.box2 .container hr {
-  width: 300px;
-  margin: 0 auto;
-  border-color: #f9d03f;
-}
-.box2 .container p {
-  font-weight: 300;
-  line-height: 30px;
-}
 .box2 .box2__card {
   display: flex;
   justify-content: space-between;
@@ -564,7 +566,7 @@ p {
   left: 0;
   width: 100%;
   height: 99%;
-  background-color: #f9d03f;
+  background-color: #999;
   opacity: 0;
   display: flex;
   align-items: center;
@@ -572,7 +574,7 @@ p {
 }
 .box2 .box2__card .card .overlay i {
   font-size: 20px;
-  color: #f9d03f;
+  color: #999;
   border-radius: 50%;
   background-color: white;
 }
@@ -646,24 +648,6 @@ p {
   height: 90vh;
   background-color: #f1f1f1;
 }
-.box3 .container {
-  width: 100%;
-  max-width: 800px;
-  text-align: center;
-  margin: 0 auto;
-}
-.box3 .container h3 {
-  font-weight: 400;
-}
-.box3 .container hr {
-  width: 300px;
-  margin: 0 auto;
-  border-color: #f9d03f;
-}
-.box3 .container p {
-  font-weight: 300;
-  line-height: 30px;
-}
 .box3 .box3__card {
   display: flex;
   justify-content: space-between;
@@ -718,7 +702,7 @@ p {
   .box3 .box3__card {
     flex-direction: column;
     width: auto;
-    max-width: auto;
+    max-width: 100%;
   }
   .box3 .box3__card .card {
     display: flex;
@@ -822,24 +806,6 @@ p {
 }
 .box4 {
   background-color: #f1f1f1;
-}
-.box4 .container {
-  width: 100%;
-  max-width: 800px;
-  text-align: center;
-  margin: 0 auto;
-}
-.box4 .container h3 {
-  font-weight: 400;
-}
-.box4 .container hr {
-  width: 300px;
-  margin: 0 auto;
-  border-color: #f9d03f;
-}
-.box4 .container p {
-  font-weight: 300;
-  line-height: 30px;
 }
 .box4 .box4__card {
   display: flex;
@@ -964,24 +930,6 @@ p {
   height: 420px;
   width: 100%;
   align-items: center;
-}
-.partners__main .container {
-  width: 100%;
-  max-width: 800px;
-  text-align: center;
-  margin: 0 auto;
-}
-.partners__main .container h3 {
-  font-weight: 400;
-}
-.partners__main .container hr {
-  width: 300px;
-  margin: 0 auto;
-  border-color: #f9d03f;
-}
-.partners__main .container p {
-  font-weight: 300;
-  line-height: 30px;
 }
 .partners__main .wrapper {
   width: 920px;
@@ -1205,6 +1153,7 @@ p {
     height: auto;
   }
   .footer__contact .wrapper {
+    padding-top: 50px;
     max-width: 100%;
   }
   .footer__contact .wrapper .footer__list {
